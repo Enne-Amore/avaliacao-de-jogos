@@ -8,3 +8,8 @@ Capa de Journey: https://www.metacritic.com/game/journey/
 
 Capa de Unravel: https://www.playstation.com/pt-br/games/unravel/
 
+Logo da Steam: <div> Ícones feitos por <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
+
+Logo da PSN: <div> Ícones feitos por <a href="https://www.flaticon.com/br/autores/vitaly-gorbachev" title="Vitaly Gorbachev"> Vitaly Gorbachev </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
+
+Logo da Microsoft Store: <div> Ícones feitos por <a href="https://roundicons.com/" title="Roundicons"> Roundicons </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
