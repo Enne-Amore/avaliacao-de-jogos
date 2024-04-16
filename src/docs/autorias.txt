@@ -24,6 +24,12 @@ Ilustração de Unravel: https://www.wired.com/2016/02/unravel-unremarkable/
 
 Exemplos de Unravel: https://store.steampowered.com/app/1225560/Unravel/
 
+Capa de Flower: https://www.metacritic.com/game/flower/
+
+Ilustração de Flower: https://annapurnainteractive.com/en/games/flower
+
+Exemplos de Flower: https://store.steampowered.com/app/966330/Flower/
+
 Logo da Steam: <div> Ícones feitos por <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
 
 Logo da PSN: <div> Ícones feitos por <a href="https://www.flaticon.com/br/autores/vitaly-gorbachev" title="Vitaly Gorbachev"> Vitaly Gorbachev </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
@@ -31,4 +37,3 @@ Logo da PSN: <div> Ícones feitos por <a href="https://www.flaticon.com/br/autor
 Logo da Microsoft Store: <div> Ícones feitos por <a href="https://roundicons.com/" title="Roundicons"> Roundicons </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
 
 Logo da Xbox: <div> Ícones feitos por <a href="https://www.flaticon.com/br/autores/pixel-perfect" title="Pixel perfect"> Pixel perfect </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
-
