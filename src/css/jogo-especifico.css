@@ -1,0 +1,203 @@
+:root {
+    --roxa-escura-1: #1D1043;
+    --roxa-escura-2: #0D0C30;
+    --roxa-escura-3: #1A152D;
+    --roxa-clara: #4928A9;
+    --preta: #080914;
+    --cinza: #110F1D;
+    --titulo: 'titulo';
+    --padrao-1: 'Open Sans', sans-serif;
+    --padrao-2: 'Poppins', sans-serif;
+}
+
+/* Cabeçalho */
+#cabecalho {
+    position: relative;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 2em 1em;
+    z-index: 1;
+}
+
+#cabecalho .voltar {
+    position: absolute;
+    top: 20%;
+    border-radius: 5em;
+    padding: 1em 1.2em;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+#cabecalho .voltar:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+#cabecalho .voltar:active {
+    background: rgba(255, 255, 255, 0.30);
+}
+
+#cabecalho .voltar span {
+    font-size: 3em;
+}
+
+#cabecalho .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#cabecalho .logo img {
+    width: 70px;
+    height: 100%;
+}
+
+#cabecalho .logo h1 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    font-family: var(--titulo);
+    font-size: 36px;
+    font-weight: 700;
+    width: 15%;
+}
+
+/* Conteúdo */
+#conteudo #info-gerais {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 12em;
+    background: linear-gradient(180deg, rgba(26, 21, 45, 0.10) 0%, var(--roxa-escura-3) 100%), url(../img/journey-ilustracao.jpg) lightgray 0px 0px no-repeat fixed;
+    background-size: cover;
+    /* filter: blur(3px); */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+#conteudo #info-gerais .detalhes {
+    border-radius: 20px;
+    border: 1px dashed #FFF;
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 1.5em 2em;
+    max-width: 500px;
+    height: 100%;
+}
+
+#conteudo #info-gerais .detalhes h2 {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    font-family: var(--titulo);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#conteudo #info-gerais .detalhes hr,
+#conteudo #info-gerais .descricao hr {
+    border-color: rgba(255, 255, 255, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1em 0;
+}
+
+#conteudo #info-gerais .detalhes .list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+}
+
+#conteudo #info-gerais .detalhes .list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+#conteudo #info-gerais .detalhes .list li img {
+    width: 35px;
+}
+
+#conteudo #info-gerais .detalhes .list li .icon {
+    font-size: 2.5em;
+}
+
+#conteudo #info-gerais .detalhes .list li .info {
+    color: #FFF;
+    font-family: var(--padrao-2);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    text-transform: capitalize;
+}
+
+#conteudo #info-gerais .descricao {
+    border-radius: 20px;
+    border: 1px dashed #FFF;
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 1.5em 2em;
+    max-width: 500px;
+    height: max-content;
+}
+
+#conteudo #info-gerais .descricao h2 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    font-family: var(--titulo);
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 0.2em;
+}
+
+#conteudo #info-gerais .descricao p {
+    color: #FFF;
+    font-family: var(--padrao-1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#conteudo #imagens-exemplos {
+    position: relative;
+    margin-top: 38em;
+    margin-bottom: 10em;
+    min-height: 70vh;
+    overflow-x: auto;
+}
+#conteudo #imagens-exemplos::-webkit-scrollbar {
+    height: 0;
+}
+
+#conteudo #imagens-exemplos .imgs {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 5em;
+    width: max-content;
+}
+
+#conteudo #imagens-exemplos .imgs figure {
+    border-radius: 40px;
+    overflow: hidden;
+    width: max-content;
+    height: 100%;
+}
+
+#conteudo #imagens-exemplos .imgs figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    transition: .4s ease-out;
+}
+#conteudo #imagens-exemplos .imgs figure:hover img {
+    transform: scale(1.2);
+}
+#conteudo #imagens-exemplos .imgs figure:last-child {
+    margin-right: 20vw;
+}
