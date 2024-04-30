@@ -16,7 +16,7 @@
 }
 
 body {
-    font: 1.5vw var(--padrao);
+    font: 1.25vw var(--padrao-1);
     background-color: var(--roxa-escura-3);
     color: white;
     animation: aparecer .5s ease-out;
@@ -35,6 +35,8 @@ a {
 button {
     border: 0;
     background-color: transparent;
+    color: white;
+    font-family: var(--padrao-2);
     cursor: pointer;
 }
 
