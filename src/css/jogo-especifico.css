@@ -54,11 +54,11 @@
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 11em;
+    padding-top: calc(18vh + 2.5em);
     background: linear-gradient(180deg, rgba(26, 21, 45, 0.10) 0%, var(--roxa-escura-3) 100%), url(../img/journey-ilustracao.jpg) lightgray 0px 0px no-repeat fixed;
     background-size: cover;
     /* filter: blur(3px); */
-    min-height: 105vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     gap: 5em;
@@ -98,7 +98,7 @@
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: auto 4vw;
+    margin: auto 3vw;
     gap: 0.5em;
 }
 
@@ -148,8 +148,8 @@
 
 #conteudo #imagens-exemplos {
     position: relative;
-    margin-top: 36em;
-    margin-bottom: 7em;
+    margin-top: calc(100vh + 1em);
+    margin-bottom: 8em;
     min-height: 70vh;
     overflow-x: auto;
 }
@@ -160,7 +160,7 @@
 #conteudo #imagens-exemplos .imgs {
     position: absolute;
     top: 0;
-    left: 20%;
+    left: 16vw;
     bottom: 0;
     right: 0;
     display: flex;

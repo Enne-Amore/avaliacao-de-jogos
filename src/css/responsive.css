@@ -1,0 +1,43 @@
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 2.5vw;
+    }
+
+    #cabecalho .logo img {
+        width: 35px;
+    }
+    #cabecalho .logo h1 {
+        width: 30%;
+    }
+
+    #conteudo #info-gerais {
+        background-position: center;
+        flex-direction: column;
+        padding: 5em;
+        padding-top: calc(9vh + 4em);
+        padding-bottom: 20vh;
+        justify-content: flex-start;
+        gap: 4em;
+    }
+    #conteudo #info-gerais .descricao p {
+        line-height: 23px;
+    }
+
+    #conteudo #imagens-exemplos {
+        min-height: 25vh;
+    }
+    #conteudo #imagens-exemplos .imgs {
+        left: 5vw;
+    }
+    #conteudo #imagens-exemplos .imgs figure {
+        border-radius: 30px;
+        width: 8%;
+        height: max-content;
+    }
+    #conteudo #imagens-exemplos .imgs figure img {
+        border-radius: 30px;
+    }
+    #conteudo #imagens-exemplos .imgs figure:last-child {
+        margin-right: 0vw;
+    }
+}
