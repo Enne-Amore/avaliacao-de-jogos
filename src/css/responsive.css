@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (orientation: portrait) {
     body {
         font-size: 2.5vw;
     }
@@ -18,6 +18,7 @@
         padding-bottom: 20vh;
         justify-content: flex-start;
         gap: 4em;
+        min-height: auto;
     }
     #conteudo #info-gerais .descricao p {
         line-height: 23px;
@@ -25,9 +26,10 @@
 
     #conteudo #imagens-exemplos {
         min-height: 25vh;
+        margin-top: calc(71vh + 11em);
     }
     #conteudo #imagens-exemplos .imgs {
-        left: 5vw;
+        left: 6vw;
     }
     #conteudo #imagens-exemplos .imgs figure {
         border-radius: 30px;
@@ -39,5 +41,31 @@
     }
     #conteudo #imagens-exemplos .imgs figure:last-child {
         margin-right: 0vw;
+    }
+
+    #conteudo #avaliacoes .form-av .desc-av #av {
+        min-width: 280px;
+        min-height: 80px;
+        border-radius: 15px;
+    }
+    #conteudo #avaliacoes .form-av button,
+    #conteudo #avaliacoes .btn-view-more {
+        padding: 0.8em 2.2em;
+    }
+    #conteudo #avaliacoes .avs {
+        gap: 4em;
+    }
+    #conteudo #avaliacoes .avs .av-feita {
+        width: 300px;
+        max-width: fit-content;
+    }
+    #conteudo #avaliacoes .avs .av-feita:nth-child(odd) {
+        transform: translateX(0em);
+    }
+    #conteudo #avaliacoes .avs .av-feita:nth-child(even) {
+        transform: translateX(0em);
+    }
+    #conteudo #avaliacoes .avs .av-feita p {
+        line-height: 23px;
     }
 }

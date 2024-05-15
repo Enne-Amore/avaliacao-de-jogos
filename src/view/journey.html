@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/responsive.css">
     <!-- JavaScript -->
     <script src="../js/topo.js" defer></script>
+    <script src="../js/modal-conta.js" defer></script>
 </head>
 <body>
     <header id="cabecalho">
@@ -153,7 +154,7 @@
                 <h1> Avaliações </h1>
             </div>
 
-            <form action="" method="post" class="form-av">
+            <form action="#" method="post" class="form-av">
                 <div class="desc-av">
                     <label for="av">
                         <span class="material-symbols-outlined sr-only" aria-hidden="true" aria-label="">
@@ -164,8 +165,30 @@
                     <textarea name="av" id="av" placeholder="Descreva sua experiência aqui"></textarea>
                 </div>
                 
-                <button type="submit"> Avaliar </button>
+                <button type="button" id="btn-avaliar"> Avaliar </button>
             </form>
+
+            <dialog id="modal">
+                <div id="transparencia"></div>
+
+                <article id="janela-flutuante">
+                    <p class="aviso">
+                        Necessário estar em conta logada ...
+                    </p>
+
+                    <a href="" rel="next" class="btn-conta">
+                        Cadastrar-se
+                    </a>
+
+                    <p class="ou">
+                        Ou
+                    </p>
+
+                    <a href="" rel="next" class="btn-conta">
+                        Entrar Conta
+                    </a>
+                </article>
+            </dialog>
 
             <div class="avs">
                 <article class="av-feita">

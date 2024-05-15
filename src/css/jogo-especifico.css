@@ -54,14 +54,22 @@
     top: 0;
     left: 0;
     right: 0;
-    padding-top: calc(18vh + 2.5em);
-    background: linear-gradient(180deg, rgba(26, 21, 45, 0.10) 0%, var(--roxa-escura-3) 100%), url(../img/journey-ilustracao.jpg) lightgray 0px 0px no-repeat fixed;
-    background-size: cover;
-    /* filter: blur(3px); */
+    padding-top: calc(18vh + 3.5em);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     gap: 5em;
+}
+#conteudo #info-gerais::before {
+    content: "";
+    background: linear-gradient(180deg, rgba(26, 21, 45, 0.10) 0%, var(--roxa-escura-3) 100%), url(../img/journey-ilustracao.jpg) lightgray 0px 0px no-repeat fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    z-index: -1;
 }
 
 #conteudo #info-gerais .detalhes,
@@ -261,7 +269,9 @@
     background-color: transparent;
 }
 
-#conteudo #avaliacoes .form-av button {
+#conteudo #avaliacoes .form-av button,
+#conteudo #avaliacoes .btn-view-more,
+#conteudo #avaliacoes #modal #janela-flutuante .btn-conta {
     border-radius: 50px;
     background: var(--roxa-clara);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
@@ -271,11 +281,47 @@
     padding: 0.6em 1.5em;
     transition: .2s;
 }
-#conteudo #avaliacoes .form-av button:hover {
+#conteudo #avaliacoes .form-av button:hover,
+#conteudo #avaliacoes .btn-view-more:hover,
+#conteudo #avaliacoes #modal #janela-flutuante .btn-conta:hover {
     background-color: var(--roxa-escura-1);
 }
-#conteudo #avaliacoes .form-av button:active {
+#conteudo #avaliacoes .form-av button:active,
+#conteudo #avaliacoes .btn-view-more:active,
+#conteudo #avaliacoes #modal #janela-flutuante .btn-conta:active {
     background-color: var(--roxa-escura-2);
+}
+
+#conteudo #avaliacoes #modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: transparent;
+    border: 0;
+    height: max-content;
+}
+#conteudo #avaliacoes #modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+#conteudo #avaliacoes #modal #janela-flutuante {
+    border-radius: 40px;
+    background: radial-gradient(78.59% 50% at 50% 50%, var(--roxa-clara) 0%, var(--roxa-escura-1) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 2em 4em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+#conteudo #avaliacoes #modal #janela-flutuante p {
+    font-size: 1.25em;
+}
+#conteudo #avaliacoes #modal #janela-flutuante .aviso {
+    transform: translateX(-8%);
+    margin-bottom: 0.4em;
 }
 
 #conteudo #avaliacoes .avs {
@@ -344,19 +390,5 @@
 }
 
 #conteudo #avaliacoes .btn-view-more {
-    border-radius: 50px;
-    background: var(--roxa-clara);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
-    font-size: 1.5em;
-    font-weight: 600;
-    padding: 0.6em 1.5em;
     margin-top: 3em;
-    transition: .2s;
-}
-#conteudo #avaliacoes .btn-view-more:hover {
-    background-color: var(--roxa-escura-1);
-}
-#conteudo #avaliacoes .btn-view-more:active {
-    background-color: var(--roxa-escura-2);
 }
