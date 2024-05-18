@@ -11,7 +11,6 @@
     }
 
     #conteudo #info-gerais {
-        background-position: center;
         flex-direction: column;
         padding: 5em;
         padding-top: calc(9vh + 4em);
@@ -20,7 +19,11 @@
         gap: 4em;
         min-height: auto;
     }
-    #conteudo #info-gerais .descricao p {
+    #conteudo #info-gerais::before {
+        background-position: center;
+    }
+    #conteudo #info-gerais .descricao p,
+    #conteudo #avaliacoes .avs .av-feita p {
         line-height: 23px;
     }
 
@@ -29,18 +32,18 @@
         margin-top: calc(71vh + 11em);
     }
     #conteudo #imagens-exemplos .imgs {
-        left: 6vw;
+        left: 8vw;
     }
     #conteudo #imagens-exemplos .imgs figure {
         border-radius: 30px;
-        width: 8%;
+        width: 85vw;
         height: max-content;
     }
     #conteudo #imagens-exemplos .imgs figure img {
         border-radius: 30px;
     }
     #conteudo #imagens-exemplos .imgs figure:last-child {
-        margin-right: 0vw;
+        margin-right: 7.5vw;
     }
 
     #conteudo #avaliacoes .form-av .desc-av #av {
@@ -51,6 +54,14 @@
     #conteudo #avaliacoes .form-av button,
     #conteudo #avaliacoes .btn-view-more {
         padding: 0.8em 2.2em;
+    }
+    #conteudo #avaliacoes #modal #janela-flutuante {
+        width: max-content;
+        padding: 2.5em 5em;
+        border-radius: 30px;
+    }
+    #conteudo #avaliacoes #modal #janela-flutuante .aviso {
+        margin-bottom: 0.8em;
     }
     #conteudo #avaliacoes .avs {
         gap: 4em;
@@ -65,7 +76,51 @@
     #conteudo #avaliacoes .avs .av-feita:nth-child(even) {
         transform: translateX(0em);
     }
+
+    #conteudo #topo {
+        font-size: 3.5em;
+        padding: .35em;
+    }
+}
+
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+    #cabecalho .voltar {
+        top: 17%;
+    }
+    #cabecalho .logo img {
+        width: 45px;
+    }
+    
+    #conteudo #info-gerais {
+        padding: 5em;
+        padding-top: calc(23vh + 3em);
+        padding-bottom: 30vh;
+        gap: 4em;
+    }
+    #conteudo #info-gerais .descricao {
+        width: 500px;
+    }
+    #conteudo #info-gerais .descricao p,
     #conteudo #avaliacoes .avs .av-feita p {
         line-height: 23px;
+    }
+    #conteudo #imagens-exemplos {
+        margin-top: calc(100vh + 5em);
+    }
+    #conteudo #avaliacoes #modal #janela-flutuante {
+        border-radius: 30px;
+    }
+    #conteudo #avaliacoes .form-av .desc-av #av {
+        min-width: 400px;
+        border-radius: 15px;
+    }
+    #conteudo #avaliacoes .avs .av-feita {
+        width: 400px;
+        max-width: fit-content;
+    }
+
+    #conteudo #topo {
+        font-size: 3.5em;
+        padding: .35em;
     }
 }

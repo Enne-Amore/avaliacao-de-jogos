@@ -3,10 +3,9 @@ const fecharModal = document.getElementById('transparencia')
 const modal = document.querySelector('#modal')
 
 btn_avaliar.addEventListener("click", () => {
-    modal.style.display = 'block'
-    modal.showModal()
+    modal.style.display = 'flex'
 })
 
-modal.addEventListener("mouseleave", () => {
-        modal.clone()
+fecharModal.addEventListener("click", () => {
+    modal.style.display = 'none'
 })
