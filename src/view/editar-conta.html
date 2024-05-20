@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conta - Avaliação de Jogos </title>
+    <link rel="shortcut icon" href="../img/cubo-icon.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/editar-conta.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <a href="javascript: history.go(-1)" rel="prev" class="voltar" aria-label="Voltar para a página anterior">
+            <span class="material-symbols-outlined sr-only" aria-hidden="true">
+                keyboard_backspace
+            </span>
+        </a>
+
+        <figure class="logo">
+            <img src="../img/cubo-icon.png" alt="Cubo como logo do site">
+
+            <h1> Avaliação De Jogos </h1>
+        </figure>
+    </header>
+
+    <main id="conteudo">
+        <form action="" method="post" id="form" autocomplete="on">
+            <div class="todos-dados">
+                <figure class="foto">
+                    <label for="img">
+                        <span class="material-symbols-outlined sr-only" aria-hidden="true" aria-label="Troque de foto de perfil clicando aqui">
+                            edit
+                        </span>
+                    </label>
+                    
+                    <input type="file" name="img" id="img">
+
+                    <img src="../img/jogo-ilustracao.png" alt="Sua foto de perfil">
+                </figure>
+
+                <div class="campos">
+                    <article class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Editar nome" value="" autofocus autocomplete="name">
+                    </article>
+
+                    <article class="campo">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Editar sobrenome" value="" autocomplete="additional-name">
+                    </article>
+
+                    <article class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Editar email" value="" autocomplete="email">
+                    </article>
+
+                    <article class="campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Editar senha" value="" autocomplete="current-password">
+                    </article>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" class="btn-salvar"> Salvar Alterações </button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

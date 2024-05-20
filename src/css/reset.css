@@ -19,6 +19,7 @@ body {
     font: 1.25vw var(--padrao-1);
     background-color: var(--roxa-escura-3);
     color: white;
+    min-height: 100vh;
     animation: aparecer .5s ease-out;
     overflow-x: hidden;
 }
@@ -34,10 +35,23 @@ a {
 
 button {
     border: 0;
-    background-color: transparent;
     color: white;
+    border-radius: 50px;
+    background: var(--roxa-clara);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
     font-family: var(--padrao-2);
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0.6em 1.5em;
     cursor: pointer;
+    transition: .2s;
+}
+button:hover {
+    background-color: var(--roxa-escura-1);
+}
+button:active {
+    background-color: var(--roxa-escura-2);
 }
 
 :focus {
@@ -132,7 +146,7 @@ button {
 @keyframes baixo {
     from {
         opacity: 0;
-        translate: 0 20vh;
+        translate: 0 5vh;
     }
     to {
         opacity: 1;
