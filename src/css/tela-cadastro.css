@@ -4,21 +4,23 @@
     overflow: hidden;
 }
 
-.back-arrow {
+.container .back-arrow {
     position: absolute;
     top: 20px;
     left: 20px;
-    cursor: pointer;
-}
-
-.back-arrow img {
-    width: 30px;
-    height: 30px;
+    width: 111.724px;
+    height: 100px;
+    flex-shrink: 0;
 }
 
 .form-container {
     display: flex;
     width: 100%;
+}
+
+.form-container .left-section .logo {
+    display: flex;
+    flex-direction: column;
 }
 
 .left-section {
@@ -29,12 +31,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.left-section .logo img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
 }
 
 .left-section h1 {
@@ -60,24 +56,28 @@ form {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 1em;
+    color: #ffffff;
 }
 
 .form-group input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    box-sizing: border-box;
-    background-color: #3d1d5c;
-    color: #ffffff;
+    width: 30em;
+    height: 60px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 1em;
+    border-radius: 5em;
+    background-color: #ffffff;
+    color: #4928A9;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .password-container {
@@ -97,19 +97,16 @@ form {
     cursor: pointer;
 }
 
-.password-toggle img {
-    width: 20px;
-    height: 20px;
-}
-
 button {
-    width: 100%;
+    width: 213px;
+    height: 60px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
     padding: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #6a1b9a;
+    border-radius: 5em;
+    background-color: #4928A9;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s;
 }
