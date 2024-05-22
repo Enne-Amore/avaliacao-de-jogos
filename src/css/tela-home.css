@@ -13,6 +13,7 @@
 .header-container .profile-icon span {
     font-size: 4em;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .header-container .logo {
@@ -55,6 +56,108 @@
     color: var(--preta);
 }
 
+.header-container .modal-container {
+    display: none;
+    height: max-content;
+    width: max-content;
+    animation: fade .1s ease-out;
+}
+
+.header-container .modal-container .transparencia {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.header-container .modal-container .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    background: radial-gradient(78.59% 50% at 50% 50%, var(--roxa-clara) 0%, var(--roxa-escura-1) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 2em 4em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.header-container .modal-container .menu a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    
+}
+
+
+.header-container .modal-container .menu span {
+    font-size:4em;
+    
+}
+
+
+.header-container .modal-container .menu hr {
+    color: rgba(255, 255, 255, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 2em;
+    width: 140%;
+}
+
+.header-container .modal-container .menu .aa {
+    font-size: 1.2em;
+}
+
+.header-container .modal-container .menu .aa a{
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+
+.header-container .modal-container .menu .aa a:hover {
+    background-color: rgba(255, 255, 255, 0.15);  
+}
+
+.header-container .modal-container .menu .aa a:active {
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+.header-container .modal-container .menu .bb {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.header-container .modal-container .menu .bb a {
+    width: 200px;
+    height: 48px;
+    border: 0;
+    color: white;
+    border-radius: 50px;
+    background: var(--roxa-clara);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    font-family: var(--padrao-2);
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0.6em 1.5em;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.header-container .modal-container .menu .bb a:hover {
+    background-color: var(--roxa-escura-1);
+}
+
+.header-container .modal-container .menu .bb a:active {
+    background-color: var(--roxa-escura-2);
+}
 
 .games-section {
     margin: 4em 5em;
@@ -205,16 +308,4 @@
     height: auto;
     max-width: 300px;
     border-radius: 40px;
-}
-
-:root {
-    --roxa-escura-1: #1D1043;
-    --roxa-escura-2: #0D0C30;
-    --roxa-escura-3: #1A152D;
-    --roxa-clara: #4928A9;
-    --preta: #080914;
-    --cinza: #110F1D;
-    --titulo: 'titulo';
-    --padrao-1: 'Open Sans', sans-serif;
-    --padrao-2: 'Poppins', sans-serif;
 }

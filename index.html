@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="src/css/responsive.css">
     <!-- JS -->
     <script src="src/js/topo.js" defer></script>
+    <script src="src/js/modal-menu.js" defer></script>
 </head>
 <body>
     <header class="header-container">
@@ -36,8 +37,36 @@
                 </span>
             </label>
         </div>
+
+        <dialog class="modal-container" id="modal-container">
+            <div class="transparencia" id="transparencia"></div>
+
+            <div class="menu">
+                <a href="">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+
+                    <h3>Perfil</h3>
+                </a>
+
+                <hr>
+                <nav class="aa">
+                    <a href="#games-section">Jogos Disponíveis</a> <br> 
+                    <a href="#footer-conteiner ">Rodapé</a>
+                </nav>
+                <hr>
+
+                <div class="bb">
+                    <a href="">Cadastrar-se</a>
+                    <a href="">Entrar Conta</a>
+                </div>
+
+            </div>
+        </dialog>
     </header>
-    <main class="games-section">
+
+    <main class="games-section" id="games-section">
         <h2>Jogos Disponíveis</h2>
 
         <div class="games-flex">
@@ -63,7 +92,7 @@
         </div>
     </main>
 
-    <footer class="footer-conteiner">
+    <footer class="footer-conteiner" id="footer-conteiner">
         <div class="logo">
             <img src="src/img/cubo-icon.png" alt="Cubo">
             <h1>Avaliação De Jogos</h1>
