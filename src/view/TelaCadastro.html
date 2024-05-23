@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/tela-cadastro.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <!-- JS -->
-    <script src="src/js/topo.js" defer></script>
+    <script src="../js/ver-senha.js" defer></script>
 </head>
 
 <body>
@@ -25,39 +25,51 @@
 
         <div class="form-container">
             <div class="left-section">
-                <div class="logo">
+                <figure class="logo">
                     <img src="../img/cubo-icon.png" alt="Avaliação De Jogos">
-                </div>
-                <h1>Avaliação De Jogos</h1>
+                    
+                    <h1>Avaliação De Jogos</h1>
+                </figure>
                 <p>Compartilhe suas experiências passadas que teve em cada jogo</p>
             </div>
             
-            <div class="right-section">
-                <form>
-                    <div class="form-group">
-                        <label for="first-name">Nome:</label>
-                        <input type="text" id="first-name" placeholder="Insira o seu nome">
+            <form action="" method="post" autocomplete="on" class="right-section">
+                <div class="form-group">
+                    <label for="first-name">Nome:</label>
+
+                    <input type="text" id="first-name" placeholder="Insira o seu nome" autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Sobrenome:</label>
+
+                    <input type="text" id="last-name" placeholder="Insira o seu sobrenome" autocomplete="family-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+
+                    <input type="email" id="email" placeholder="Insira o seu email" autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Insira uma boa senha"  autocomplete="current-password">
+
+                        <span class="material-symbols-outlined sr-only visivel" aria-label="Ver e/ou saber senha">
+                            visibility
+                        </span>
+
+                        <span class="material-symbols-outlined sr-only invisivel" aria-label="Não ver e/ou saber senha">
+                            visibility_off
+                        </span>                        
                     </div>
-                    <div class="form-group">
-                        <label for="last-name">Sobrenome:</label>
-                        <input type="text" id="last-name" placeholder="Insira o seu sobrenome">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="Insira o seu email">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Senha:</label>
-                        <div class="password-container">
-                            <input type="password" id="password" placeholder="Insira uma boa senha">
-                            <span class="material-symbols-outlined">
-                                visibility
-                            </span>                        
-                        </div>
-                    </div>
-                    <button type="submit">Avançar</button>
-                </form>
-            </div>
+                </div>
+
+                <button type="submit" class="btn-avancar">Avançar</button>
+            </form>
         </div>
     </main>
 </body>

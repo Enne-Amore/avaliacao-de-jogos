@@ -1,118 +1,124 @@
 .container {
-    display: flex;
-    border-radius: 10px;
-    overflow: hidden;
+    position: relative;
 }
 
 .container .back-arrow {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 111.724px;
-    height: 100px;
-    flex-shrink: 0;
+    top: 2vh;
+    left: 1%;
+    border-radius: 5em;
+    padding: 1em 1.2em;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+.container .back-arrow:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+.container .back-arrow:active {
+    background: rgba(255, 255, 255, 0.30);
+}
+.container .back-arrow span {
+    font-size: 3em;
 }
 
-.form-container {
+.container .form-container {
+    position: absolute;
+    top: 14vh;
+    left: 0;
+    right: 0;
     display: flex;
-    width: 100%;
+    justify-content: center;
+    gap: 10em;
+    margin: auto 15%;
 }
 
-.form-container .left-section .logo {
-    display: flex;
-    flex-direction: column;
-}
-
-.left-section {
-    padding: 40px;
-    width: 50%;
+.container .form-container .left-section {
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-.left-section h1 {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-.left-section p {
-    font-size: 16px;
-    color: #b9b9b9;
-}
-
-.right-section {
-    padding: 40px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-form {
     width: 100%;
 }
 
-.form-group {
-    margin-bottom: 40px;
+.container .form-container .left-section .logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-.form-group label {
+.container .form-container .left-section .logo img {
+    width: 70px;
+    height: 100%;
+}
+
+.container .form-container .left-section h1 {
+    font-size: 1.5em;
+    font-family: var(--titulo);
+    margin: 10px 0;
+    width: 25%;
+}
+
+.container .form-container .left-section p {
+    font-size: 1.25em;
+    line-height: 30px;
+    text-align: center;
+}
+
+.container .right-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: .05em;
+    width: 100%;
+}
+
+.container .form-group label {
     display: block;
     margin-bottom: 5px;
     font-size: 1em;
     color: #ffffff;
 }
 
-.form-group input {
-    width: 30em;
-    height: 60px;
-    flex-shrink: 0;
+.container .form-group input {
+    width: 100%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
-    padding: 1em;
-    border-radius: 5em;
-    background-color: #ffffff;
-    color: #4928A9;
+    padding: .8em 1.2em;
+    border-radius: 25px;
+    border: 2px solid var(--roxa-clara);
+    color: var(--roxa-clara);
     font-size: 1em;
-    cursor: pointer;
     transition: background-color 0.3s;
 }
+.container .form-group input:focus {
+    border-color: var(--roxa-escura-1);
+}
 
-.password-container {
+.container .form-container .right-section .form-group .password-container {
     position: relative;
 }
 
-.password-container input {
-    width: calc(100% - 40px);
-    display: inline-block;
-}
-
-.password-toggle {
+.container .form-container .right-section .form-group .password-container span {
     position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 25%;
+    right: 4%;
+    color: var(--roxa-clara);
     cursor: pointer;
 }
-
-button {
-    width: 213px;
-    height: 60px;
-    flex-shrink: 0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
-    padding: 15px;
-    border-radius: 5em;
-    background-color: #4928A9;
-    color: #ffffff;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.container .form-container .right-section .form-group .password-container span.invisivel {
+    display: none;
 }
 
-button:hover {
-    background-color: #7b1fa2;
+.container .form-container .right-section .btn-avancar {
+    width: max-content;
 }
 
 @media (max-width: 768px) {
