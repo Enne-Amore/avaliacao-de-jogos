@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/tela-entrar-conta.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <!-- JS -->
-    <script src="src/js/topo.js" defer></script>
+    <script src="../js/ver-senha.js" defer></script>
 </head>
 
 <body>
@@ -27,29 +27,36 @@
             <div class="left-section">
                 <div class="logo">
                     <img src="../img/cubo-icon.png" alt="Avaliação De Jogos">
+                    
+                    <h1>Avaliação De Jogos</h1>
                 </div>
-                <h1>Avaliação De Jogos</h1>
+                
                 <p>Compartilhe suas experiências passadas que teve em cada jogo</p>
             </div>
             
-            <div class="right-section">
-                <form>
-                    <div class="form-group">
-                        <label for="first-name">Login:</label>
-                        <input type="text" id="first-name" placeholder="Insira o seu nome">
+            <form action="" method="post" class="right-section">
+                <div class="form-group">
+                    <label for="first-name">Login:</label>
+
+                    <input type="text" id="first-name" placeholder="Insira o seu nome ou email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Insira uma boa senha " autocomplete="current-password">
+
+                        <span class="material-symbols-outlined sr-only visivel" aria-label="Ver e/ou saber senha" tabindex="0">
+                            visibility
+                        </span>
+
+                        <span class="material-symbols-outlined sr-only invisivel" aria-label="Não ver e/ou saber senha" tabindex="0">
+                            visibility_off
+                        </span>
                     </div>
-                    <div class="form-group">
-                        <label for="password">Senha:</label>
-                        <div class="password-container">
-                            <input type="password" id="password" placeholder="Insira uma boa senha ">
-                            <span class="material-symbols-outlined">
-                                visibility
-                            </span>                        
-                        </div>
-                    </div>
-                    <button type="submit">Entrar</button>
-                </form>
-            </div>
+                </div>
+                <button type="submit" class="btn-entrar">Entrar</button>
+            </form>
         </div>
     </main>
 </body>

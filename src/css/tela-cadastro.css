@@ -11,40 +11,44 @@
     cursor: pointer;
     transition-duration: .2s;
 }
-.container .back-arrow:hover {
+.container .back-arrow:hover,
+.container .back-arrow:focus-visible {
     background: rgba(255, 255, 255, 0.15);
 }
 .container .back-arrow:active {
     background: rgba(255, 255, 255, 0.30);
 }
+
 .container .back-arrow span {
     font-size: 3em;
 }
 
 .container .form-container {
     position: absolute;
-    top: 14vh;
+    top: 12vh;
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10em;
     margin: auto 15%;
 }
 
 .container .form-container .left-section {
-    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    gap: .5em;
 }
 
 .container .form-container .left-section .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
+    gap: .8em;
 }
 
 .container .form-container .left-section .logo img {
@@ -53,16 +57,17 @@
 }
 
 .container .form-container .left-section h1 {
-    font-size: 1.5em;
+    font-size: 2.25em;
     font-family: var(--titulo);
     margin: 10px 0;
-    width: 25%;
+    width: 50%;
 }
 
 .container .form-container .left-section p {
     font-size: 1.25em;
     line-height: 30px;
     text-align: center;
+    width: 85%;
 }
 
 .container .right-section {
@@ -84,19 +89,19 @@
 .container .form-group label {
     display: block;
     margin-bottom: 5px;
-    font-size: 1em;
+    font-size: 1.25em;
     color: #ffffff;
 }
 
 .container .form-group input {
     width: 100%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
-    padding: .8em 1.2em;
+    padding: .6em 1em;
     border-radius: 25px;
     border: 2px solid var(--roxa-clara);
     color: var(--roxa-clara);
     font-size: 1em;
-    transition: background-color 0.3s;
+    font-family: var(--padrao-2);
 }
 .container .form-group input:focus {
     border-color: var(--roxa-escura-1);
@@ -113,12 +118,16 @@
     color: var(--roxa-clara);
     cursor: pointer;
 }
+.container .form-container .right-section .form-group .password-container span:focus-visible {
+    outline: auto;
+}
 .container .form-container .right-section .form-group .password-container span.invisivel {
     display: none;
 }
 
 .container .form-container .right-section .btn-avancar {
     width: max-content;
+    margin-top: .5em;
 }
 
 @media (max-width: 768px) {
