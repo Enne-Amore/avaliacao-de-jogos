@@ -1,0 +1,155 @@
+/* Fundo da tela */
+body {
+    background: radial-gradient(50% 50% at 50% 50%, var(--roxa-clara) 0%, var(--roxa-escura-1) 100%);
+}
+
+/* Cabeçalho */
+#cabecalho {
+    position: relative;
+    padding: 1.5em 0.5em;
+    z-index: 1;
+}
+
+#cabecalho .voltar {
+    position: absolute;
+    top: 16%;
+    border-radius: 5em;
+    padding: 1em 1.2em;
+    cursor: pointer;
+    transition-duration: .2s;
+    animation: cabecalho .5s ease-out both;
+    z-index: 1;
+}
+#cabecalho .voltar:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+#cabecalho .voltar:active {
+    background: rgba(255, 255, 255, 0.30);
+}
+
+#cabecalho .voltar span {
+    font-size: 3em;
+}
+
+#cabecalho .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    animation: cabecalho .6s ease-out .4s both;
+}
+
+#cabecalho .logo img {
+    width: 70px;
+    height: 100%;
+}
+
+#cabecalho .logo h1 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    font-family: var(--titulo);
+    font-size: 2.25em;
+    font-weight: 700;
+    width: 15%;
+}
+
+/* Conteúdo */
+#conteudo #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin: 1.5em 0;
+}
+#conteudo #form .todos-dados {
+    display: flex;
+    gap: 6em;
+}
+#conteudo #form .todos-dados .foto {
+    position: relative;
+    animation: esquerda .6s ease-out 1s both;
+}
+#conteudo #form .todos-dados .foto input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+}
+#conteudo #form .todos-dados .foto span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    font-size: 1.8em;
+    padding: 0.2em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+}
+#conteudo #form .todos-dados .foto span:hover {
+    background-color: var(--roxa-clara);
+}
+#conteudo #form .todos-dados .foto span:active {
+    background-color: var(--roxa-escura-1);
+}
+#conteudo #form .todos-dados .foto img {
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    border: 2px solid #FFF;
+    background: var(--cinza) 0px 0px / 100% 149.982% no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+#conteudo #form .todos-dados .campos,
+#conteudo #form .todos-dados .campos .campo {
+    display: flex;
+    flex-direction: column;
+}
+#conteudo #form .todos-dados .campos {
+    gap: 1em;
+    animation: direita .6s ease-out 1s both;
+}
+#conteudo #form .todos-dados .campos .campo {
+    gap: 0.2em;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+#conteudo #form .todos-dados .campos .campo label {
+    font-size: 1.25em;
+    font-family: var(--padrao-1);
+}
+#conteudo #form .todos-dados .campos .campo input {
+    border-radius: 20px;
+    padding: 0.6em 1em;
+    border: 2px solid var(--roxa-clara);
+    color: var(--roxa-clara);
+    font-size: 1em;
+    font-family: var(--padrao-2);
+    min-width: 250px;
+    box-sizing: content-box;
+}
+#conteudo #form .todos-dados .campos .campo input:focus {
+    border-color: var(--roxa-escura-1);
+}
+#conteudo #form .btn-container {
+    overflow: hidden;
+}
+#conteudo #form .btn-container .btn-salvar {
+    animation: baixo .5s ease-out 1.3s both;
+}
+
+:root {
+    --roxa-escura-1: #1D1043;
+    --roxa-escura-2: #0D0C30;
+    --roxa-escura-3: #1A152D;
+    --roxa-clara: #4928A9;
+    --preta: #080914;
+    --cinza: #110F1D;
+    --titulo: 'titulo';
+    --padrao-1: 'Open Sans', sans-serif;
+    --padrao-2: 'Poppins', sans-serif;
+}

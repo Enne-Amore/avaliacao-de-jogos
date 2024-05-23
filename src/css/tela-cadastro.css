@@ -1,0 +1,146 @@
+.container {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 111.724px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+.form-container .left-section .logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left-section h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.left-section p {
+    font-size: 16px;
+    color: #b9b9b9;
+}
+
+.right-section {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.form-group input {
+    width: 30em;
+    height: 60px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 1em;
+    border-radius: 5em;
+    background-color: #ffffff;
+    color: #4928A9;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: calc(100% - 40px);
+    display: inline-block;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button {
+    width: 213px;
+    height: 60px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 15px;
+    border-radius: 5em;
+    background-color: #4928A9;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7b1fa2;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .left-section, .right-section {
+        width: 100%;
+    }
+    
+    .left-section {
+        padding: 20px;
+    }
+    
+    .right-section {
+        padding: 20px;
+    }
+}
+
+:root {
+    --roxa-escura-1: #1D1043;
+    --roxa-escura-2: #0D0C30;
+    --roxa-escura-3: #1A152D;
+    --roxa-clara: #4928A9;
+    --preta: #080914;
+    --cinza: #110F1D;
+    --titulo: 'titulo';
+    --padrao-1: 'Open Sans', sans-serif;
+    --padrao-2: 'Poppins', sans-serif;
+}

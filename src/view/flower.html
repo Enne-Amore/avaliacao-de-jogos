@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flower - Avaliação de Jogos </title>
+    <link rel="shortcut icon" href="../img/cubo-icon.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/jogo-especifico.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- JavaScript -->
+    <script src="../js/topo.js" defer></script>
+    <script src="../js/modal-conta.js" defer></script>
+</head>
+<body>
+    <header id="cabecalho">
+        <a href="javascript: history.go(-1)" rel="prev" class="voltar" aria-label="Voltar para a página anterior">
+            <span class="material-symbols-outlined sr-only" aria-hidden="true">
+                keyboard_backspace
+            </span>
+        </a>
+
+        <figure class="logo">
+            <img src="../img/cubo-icon.png" alt="Cubo como logo do site">
+
+            <h1> Avaliação De Jogos </h1>
+        </figure>
+    </header>
+
+    <main id="conteudo" class="flower">
+        <section id="info-gerais">
+            <article class="detalhes">
+                <h2> Journey </h2>
+
+                <hr>
+
+                <ul class="list">
+                    <li>
+                        <span class="material-symbols-outlined sr-only icon" aria-hidden="true" aria-label="Ícone de rede mundial">
+                            language
+                        </span>
+                        
+                        <span lang="en" class="info">
+                            Online
+                        </span>
+                    </li>
+                    
+                    <li>
+                        <span class="material-symbols-outlined sr-only icon" aria-hidden="true" aria-label="Ícone da Xbox">
+                            sports_esports
+                        </span>
+                        
+                        <span lang="en" class="info">
+                            Xbox
+                        </span>
+                    </li>
+                    
+                    <li>
+                        <span class="material-symbols-outlined sr-only icon" aria-hidden="true" aria-label="Ícone da PS4">
+                            gamepad
+                        </span>
+                        
+                        <span class="info">
+                            PS4
+                        </span>
+                    </li>
+                    
+                    <li>
+                        <span class="material-symbols-outlined sr-only icon" aria-hidden="true" aria-label="Ícone do computador">
+                            computer
+                        </span>
+
+                        <span lang="en" class="info">
+                            desktop
+                        </span>
+                    </li>
+                    
+                    <li>
+                        <span class="material-symbols-outlined sr-only icon" aria-hidden="true" aria-label="Ícone de pessoa">
+                            person_3
+                        </span>
+
+                        <span class="info">
+                            1 pessoa
+                        </span>
+                    </li>
+                    
+                    <li>
+                        <span class="material-symbols-outlined sr-only icon" aria-hidden="true" aria-label="Ícone de categoria">
+                            category
+                        </span>
+
+                        <span class="info">
+                            Aventura
+                        </span>
+                    </li>
+                    
+                    <li>
+                        <span class="material-symbols-outlined sr-only icon" aria-hidden="true" aria-label="Ícone de data">
+                            calendar_month
+                        </span>
+
+                        <span class="info">
+                            11/01/2020
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="material-symbols-outlined sr-only icon" aria-hidden="true" aria-label="Ícone de desenvolvimento">
+                            code_blocks
+                        </span>
+
+                        <span lang="en" class="info">
+                            that game company
+                        </span>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="descricao">
+                <h2> Descrição </h2>
+
+                <hr>
+
+                <p>
+                    Explore o mundo misterioso ancestral de Journey enquanto plana sobre as ruínas e voa cruzando areiaspara descobrir seus segredos.
+                </p>
+            </article>
+        </section>
+
+        <section id="imagens-exemplos">
+            <article class="imgs">
+                <figure>
+                    <img src="../img/flower-exemplo-1.jpg" alt="Imagem de exemplo 1">
+                </figure>
+
+                <figure>
+                    <img src="../img/flower-exemplo-2.jpg" alt="Imagem de exemplo 2">
+                </figure>
+
+                <figure>
+                    <img src="../img/flower-exemplo-3.jpg" alt="Imagem de exemplo 3">
+                </figure>
+            </article>
+        </section>
+
+        <section id="avaliacoes">
+            <div class="titulo">
+                <hr>
+
+                <h1> Avaliações </h1>
+            </div>
+
+            <form action="#" method="post" class="form-av">
+                <div class="desc-av">
+                    <label for="av">
+                        <span class="material-symbols-outlined sr-only" aria-hidden="true" aria-label="">
+                            account_circle
+                        </span>
+                    </label>
+                    
+                    <textarea name="av" id="av" placeholder="Descreva sua experiência aqui"></textarea>
+                </div>
+                
+                <button type="button" id="btn-avaliar"> Avaliar </button>
+            </form>
+
+            <dialog id="modal">
+                <div id="transparencia"></div>
+
+                <article id="janela-flutuante">
+                    <p class="aviso">
+                        Necessário estar em conta logada ...
+                    </p>
+
+                    <a href="" rel="next" class="btn-conta">
+                        Cadastrar-se
+                    </a>
+
+                    <p class="ou">
+                        Ou
+                    </p>
+
+                    <a href="" rel="next" class="btn-conta">
+                        Entrar Conta
+                    </a>
+                </article>
+            </dialog>
+
+            <div class="avs">
+                <article class="av-feita">
+                    <div class="dados-tecnicos">
+                        <div class="perfil">
+                            <span class="material-symbols-outlined sr-only foto-perfil" aria-hidden="true" aria-label="">
+                                account_circle
+                            </span>
+                
+                            <h2> Sussie Kanté </h2>
+                        </div>
+                
+                        <span class="data"> 10/12/2020 </span>
+                    </div>
+                
+                    <hr>
+
+                    <p>
+                        Espetacular, uma experiência que ultrapassa as fronteiras de um simples jogo. Uma experiência pessoal valiosa. Um dos melhores jogos que já vi. Vale a pena experimentar.
+                    </p>
+                </article>
+
+                <article class="av-feita">
+                    <div class="dados-tecnicos">
+                        <div class="perfil">
+                            <span class="material-symbols-outlined sr-only foto-perfil" aria-hidden="true" aria-label="">
+                                account_circle
+                            </span>
+                
+                            <h2> Marie Du Pain-Chang </h2>
+                        </div>
+                
+                        <span class="data"> 02/02/2021 </span>
+                    </div>
+                
+                    <hr>
+
+                    <p>
+                        Jogo belíssimo, com uma sensibilidade artística e sonora expressante, é um game que dá lugar a um terreno fértil da imaginação. Pode-se imaginar que seja um jogo que fala de civilizações que se findaram por vários fatores, prosperaram por algum objetivo e se dissiparam pelo mesmo motivo, onde dá margem a guerras entre os povos (ruínas) etc. Vale a pena experimentar e explorar cada lugar extraordinário.
+                    </p>
+                </article>
+            </div>
+
+            <button type="button" class="btn-view-more"> Visualizar Mais </button>
+        </section>
+
+        <span class="material-symbols-outlined sr-only" id="topo" aria-hidden="true" aria-label="Volte ao topo da página clicando aqui" tabindex="0">
+            shift
+        </span>
+    </main>
+</body>
+</html>

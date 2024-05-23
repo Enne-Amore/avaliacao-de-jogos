@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* Fonte do site */
+@font-face {
+    font-family: 'titulo';
+    src: url(../fonts/Tourney/Tourney-VariableFont_wdth\,wght.ttf) format(truetype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset das tags */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.25vw var(--padrao-1);
+    background-color: var(--roxa-escura-3);
+    color: white;
+    min-height: 100vh;
+    animation: aparecer .5s ease-out;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    border: 0;
+    color: white;
+    border-radius: 50px;
+    background: var(--roxa-clara);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    font-family: var(--padrao-2);
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0.6em 1.5em;
+    cursor: pointer;
+    transition: .2s;
+}
+button:hover {
+    background-color: var(--roxa-escura-1);
+}
+button:active {
+    background-color: var(--roxa-escura-2);
+}
+
+dialog {
+    background: none;
+    border: 0;
+    z-index: 1;
+}
+
+:focus {
+    outline: 0;
+}
+
+/* Variáveis CSS */
+:root {
+    --roxa-escura-1: #1D1043;
+    --roxa-escura-2: #0D0C30;
+    --roxa-escura-3: #1A152D;
+    --roxa-clara: #4928A9;
+    --preta: #080914;
+    --cinza: #110F1D;
+    --titulo: 'titulo';
+    --padrao-1: 'Open Sans', sans-serif;
+    --padrao-2: 'Poppins', sans-serif;
+}
+
+/* Estilização da barrinha de rolagem */
+::-webkit-scrollbar {
+    width: auto;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--roxa-escura-3);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--roxa-clara);
+    border-radius: 1em;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--roxa-escura-1);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--roxa-escura-2);
+}
+
+/* Animações dos elementos */
+@keyframes aparecer {
+    0% {
+        transform: translateX(-5px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes cabecalho {
+    from {
+        filter: blur(10px);
+        translate: -100vw 0;
+    }
+    to {
+        filter: blur(0px);
+        translate: 0 0;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes esquerda {
+    from {
+        opacity: 0;
+        translate: -10vw 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes direita {
+    from {
+        opacity: 0;
+        translate: 10vw 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes baixo {
+    from {
+        opacity: 0;
+        translate: 0 5vh;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
