@@ -1,6 +1,6 @@
-# 🎮 Avaliação De Jogos
+# 🎮 Avaliação de Jogos
 
- Website feito para fazer avaliação de jogos. Projeto proposto pelo professor da matéria Tópicos Especiais em Sistemas Para Internet (TESPI).
+ Website feito para fazer avaliação de jogos. Projeto proposto pelo professor [Jeofton Costa](https://github.com/Jeofton) da matéria Tópicos Especiais em Sistemas Para Internet (TESPI).
 
 
 ## 🌐 Aplicação Hospedada
@@ -80,4 +80,16 @@
  ```bash
  Open with Live Server
  ```
+
+
+## 🌈 Cores
+
+ | Cor           | Hexadecimal |
+ | ------------- | ----------- |
+ | Roxa Escura 1 | `#1D1043`   |
+ | Roxa Escura 2 | `#0D0C30`   |
+ | Roxa Escura 3 | `#1A152D`   |
+ | Roxa Clara    | `#4928A9`   |
+ | Preta         | `#080914`   |
+ | Cinza         | `#110F1D`   |
 
