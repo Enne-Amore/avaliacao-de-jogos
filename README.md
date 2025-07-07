@@ -110,6 +110,17 @@
    `font-family: var(--padrao-2);`
 
 
+## 👥 Equipe do projeto
+
+ | Nome                  | GitHub                                |
+ | --------------------- | ------------------------------------- |
+ | Enne Jim Pessoa       | https://github.com/Enne-Amore         |
+ | Thiago Henrique       | https://github.com/ThiagoHenrique22   |
+ | Saiô Ferreira         | https://github.com/saioon             |
+ | João do Prado Ximenes | https://github.com/joaodopradoximenes |
+ | André Santana         | https://github.com/vSantanaa          |
+
+
 ## 🔧 Suporte
 
  Para me contatar como suporte, o meu email é [Enne.Pessoa@gmail.com](mailto:Enne.Pessoa@gmail.com)
