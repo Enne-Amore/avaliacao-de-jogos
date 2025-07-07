@@ -47,7 +47,6 @@ button {
     cursor: pointer;
     transition: .2s;
 }
-button:hover {
 button:hover,
 button:focus-visible {
     background-color: var(--roxa-escura-1);
@@ -60,10 +59,6 @@ dialog {
     background: none;
     border: 0;
     z-index: 1;
-}
-
-:focus {
-    outline: 0;
 }
 
 /* Variáveis CSS */

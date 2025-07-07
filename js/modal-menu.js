@@ -7,6 +7,14 @@ profile_icon.addEventListener("click", () => {
     modal.style.display = 'flex'
 })
 
+// Abrindo o menu através do teclado
+profile_icon.addEventListener('keypress', (tecla) => {
+    if (tecla.key === "Enter") {
+        tecla.target.click()
+        document.querySelector("#account").focus()
+    }
+})
+
 fecharModal.addEventListener("click", () => {
     modal.style.display = 'none'
 })

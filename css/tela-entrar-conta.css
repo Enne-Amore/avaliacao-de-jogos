@@ -118,9 +118,6 @@
     color: var(--roxa-clara);
     cursor: pointer;
 }
-.container .form-container .right-section .form-group .password-container span:focus-visible {
-    outline: auto;
-}
 .container .form-container .right-section .form-group .password-container span.invisivel {
     display: none;
 }
