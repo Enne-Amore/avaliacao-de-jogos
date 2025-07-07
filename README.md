@@ -1,6 +1,6 @@
 # 🎮 Avaliação de Jogos
 
- Website feito para fazer avaliação de jogos. Projeto proposto pelo professor [Jeofton Costa](https://github.com/Jeofton) da matéria Tópicos Especiais em Sistemas Para Internet (TESPI).
+ Website feito para fazer avaliação de jogos e saber sobre o que outras pessoas pensam a respeito de cada um. Projeto proposto pelo professor [Jeofton Costa](https://github.com/Jeofton) da matéria Tópicos Especiais em Sistemas Para Internet (TESPI).
 
 
 ## 🌐 Aplicação Hospedada
@@ -108,6 +108,30 @@
    Exemplo de uso:  
    `font-family: "Poppins";` ou 
    `font-family: var(--padrao-2);`
+
+
+## 🌟 Referências de Uso
+
+ - [Ícone do site](https://www.flaticon.com/br/autores/smashicons)
+ - [Capa de LIS](https://www.eneba.com/pl/steam-life-is-strange-remastered-collection-steam-key-global)
+ - [Ilustração de LIS](https://www.wallpaperflare.com/search?wallpaper=life+is+strange)
+ - [Exemplos de LIS](https://store.steampowered.com/app/319630/Life_is_Strange__Episode_1/)
+ - [Capa de Gris](https://store.playstation.com/pt-br/product/UP3643-PPSA09803_00-0213898888783272)
+ - [Ilustração de Gris](https://www.techtudo.com.br/guia/2023/10/gris-veja-historia-e-gameplay-do-jogo-de-plataforma-com-visual-unico-edjogos.ghtml)
+ - [Exemplos de Gris](https://store.steampowered.com/app/683320/GRIS/)
+ - [Capa de Journey](https://www.metacritic.com/game/journey/)
+ - [Ilustração de Journey](https://wallpapercave.com/journey-game-wallpapers)
+ - [Exemplos de Journey](https://store.steampowered.com/app/638230/Journey/)
+ - [Capa de Unravel](https://www.playstation.com/pt-br/games/unravel/)
+ - [Ilustração de Unravel](https://www.wired.com/2016/02/unravel-unremarkable/)
+ - [Exemplos de Unravel](https://store.steampowered.com/app/1225560/Unravel/)
+ - [Capa de Flower](https://www.metacritic.com/game/flower/)
+ - [Ilustração de Flower](https://annapurnainteractive.com/en/games/flower)
+ - [Exemplos de Flower](https://store.steampowered.com/app/966330/Flower/)
+ - [Logo da Steam](https://www.freepik.com)
+ - [Logo da PSN](https://www.flaticon.com/br/autores/vitaly-gorbachev)
+ - [Logo da Microsoft Store](https://roundicons.com/)
+ - [Logo da Xbox](https://www.flaticon.com/br/autores/pixel-perfect)
 
 
 ## 👥 Equipe do projeto
