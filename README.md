@@ -93,3 +93,19 @@
  | Preta         | `#080914`   |
  | Cinza         | `#110F1D`   |
 
+
+## 🔤 Fontes Tipográficas
+
+ - **Tourney**  
+   Exemplo de uso:  
+   `font-family: "titulo";` ou 
+   `font-family: var(--titulo);`
+ - **Open Sans**  
+   Exemplo de uso:  
+   `font-family: "Open Sans";` ou 
+   `font-family: var(--padrao-1);`
+ - **Poppins**  
+   Exemplo de uso:  
+   `font-family: "Poppins";` ou 
+   `font-family: var(--padrao-2);`
+
