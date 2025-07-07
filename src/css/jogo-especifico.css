@@ -63,6 +63,8 @@
 }
 #conteudo #info-gerais::before {
     content: "";
+    background: linear-gradient(180deg, rgba(26, 21, 45, 0.10) 0%, var(--roxa-escura-3) 100%), url(../img/journey-ilustracao.jpg) lightgray 0px 0px no-repeat fixed;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
