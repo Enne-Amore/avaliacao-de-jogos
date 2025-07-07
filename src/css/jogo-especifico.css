@@ -73,6 +73,26 @@
     filter: blur(3px);
     z-index: -1;
 }
+#conteudo.journey #info-gerais::before {
+    background: linear-gradient(180deg, rgba(26, 21, 45, 0.10) 0%, var(--roxa-escura-3) 100%), url(../img/journey-ilustracao.jpg) lightgray 0px 0px no-repeat fixed;
+    background-size: cover;
+}
+#conteudo.gris #info-gerais::before {
+    background: linear-gradient(180deg, rgba(26, 21, 45, 0.10) 0%, var(--roxa-escura-3) 100%), url(../img/gris-ilustracao.webp) lightgray 0px 0px no-repeat fixed;
+    background-size: cover;
+}
+#conteudo.unravel #info-gerais::before {
+    background: linear-gradient(180deg, rgba(26, 21, 45, 0.10) 0%, var(--roxa-escura-3) 100%), url(../img/unravel-ilustracao.webp) lightgray 0px 0px no-repeat fixed;
+    background-size: cover;
+}
+#conteudo.lis #info-gerais::before {
+    background: linear-gradient(180deg, rgba(26, 21, 45, 0.10) 0%, var(--roxa-escura-3) 100%), url(../img/lis-ilustracao.jpg) lightgray 0px 0px no-repeat fixed;
+    background-size: cover;
+}
+#conteudo.flower #info-gerais::before {
+    background: linear-gradient(180deg, rgba(26, 21, 45, 0.10) 0%, var(--roxa-escura-3) 100%), url(../img/flower-ilustracao.webp) lightgray 0px 0px no-repeat fixed;
+    background-size: cover;
+}
 
 #conteudo #info-gerais .detalhes,
 #conteudo #info-gerais .descricao {

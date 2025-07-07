@@ -48,10 +48,18 @@ button {
     transition: .2s;
 }
 button:hover {
+button:hover,
+button:focus-visible {
     background-color: var(--roxa-escura-1);
 }
 button:active {
     background-color: var(--roxa-escura-2);
+}
+
+dialog {
+    background: none;
+    border: 0;
+    z-index: 1;
 }
 
 :focus {
